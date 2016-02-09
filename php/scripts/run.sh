@@ -8,5 +8,5 @@ if [ ! -f /app/index.php ]; then
 fi
 
 echo "[${STAMP}] Starting daemon..."
-# run hhvm server daemon
-hhvm --mode=server
+# run apache httpd daemon
+httpd -D FOREGROUND
