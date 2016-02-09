@@ -1,4 +1,4 @@
-# openshift-example-project
+# openshift-wordpress-php
 
 Example project running:
 - php webserver running wordpress
@@ -11,11 +11,11 @@ create a new project
 
 ```sh
 > oc new-project example-wordpress-php \
-    --description="Examples WordPress PHP" \
-    --display-name="Examples"
+    --description="Example WordPress PHP" \
+    --display-name="Example WordPress HHVM"
 ```
 
-build static webserver
+build it all
 
 ```sh
 > ./BuildAll.sh
