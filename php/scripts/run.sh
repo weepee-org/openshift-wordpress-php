@@ -7,6 +7,8 @@ if [ ! -f /app/index.php ]; then
   cp -vfr /wordpress/* /app/
 fi
 
+echo "openshift-wordpress:x:`id -u`:0:openshift-wordpress:/:/sbin/nologin" >> /etc/passwd
+
 echo "[${STAMP}] Starting daemon..."
 # run apache httpd daemon
 httpd -D FOREGROUND
