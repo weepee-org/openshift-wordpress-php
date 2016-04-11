@@ -1,4 +1,7 @@
-FROM weepee-registry/php-webserver
+FROM weepee-registry/php7-webserver
+
+# php ini
+COPY php.ini /etc/php7/php.ini
 
 # Add clean wordpress
 ADD wordpress /wordpress
